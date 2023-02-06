@@ -94,6 +94,7 @@ progress {
 }
 [type="search"] {
   -webkit-appearance: textfield;
+  -moz-appearance: textfield;
   appearance: textfield;
   outline-offset: -2px;
 }
@@ -218,7 +219,7 @@ img,
 object,
 svg,
 video {
-  vertical-align: middle;
+  display: block;
 }
 img,
 video {
@@ -1403,6 +1404,12 @@ select {
 }
 .pr-4 {
   padding-right: 1rem;
+}
+.pt-12 {
+  padding-top: 3rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
 }
 .text-left {
   text-align: left;
@@ -2820,6 +2827,9 @@ button.date-input {
   .lg\:\!flex-row-reverse {
     flex-direction: row-reverse !important;
   }
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -2875,6 +2885,12 @@ button.date-input {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
+  }
+  .lg\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
   .lg\:text-right {
     text-align: right;
   }
@@ -2924,7 +2940,13 @@ button.date-input {
     padding-bottom: 10rem;
   }
   .xl\:py-20 {
+    padding-bottom: 5rem;
+  }
+  .xl\:pt-20,
+  .xl\:py-20 {
     padding-top: 5rem;
+  }
+  .xl\:pb-20 {
     padding-bottom: 5rem;
   }
   .xl\:text-7xl {
@@ -3097,6 +3119,9 @@ button.date-input {
 .Toastify__toast-container {
   z-index: var(--toastify-z-index);
   -webkit-transform: translate3d(0, 0, var(--toastify-z-index) px);
+  -moz-transform: translate3d(0, 0, var(--toastify-z-index) px);
+  -ms-transform: translate3d(0, 0, var(--toastify-z-index) px);
+  -o-transform: translate3d(0, 0, var(--toastify-z-index) px);
   transform: translate3d(0, 0, var(--toastify-z-index) px);
   position: fixed;
   padding: 4px;
