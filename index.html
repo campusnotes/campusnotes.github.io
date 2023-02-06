@@ -1091,8 +1091,12 @@
                         apply.
                       </div>
                       <button
+                        id="demo-form"
+                        data-sitekey="6LckTlokAAAAAIajECXZwo9ZmJf_EsK0K5rqijEU"
+                        data-callback="onSubmit"
+                        data-action="submit"
                         type="submit"
-                        class="button primary lg w-36 mt-2 md:mt-0"
+                        class="button primary lg w-36 mt-2 md:mt-0 g-recaptcha"
                         style="
                           background: #d5bd58;
                           border-radius: 8px;
@@ -1220,7 +1224,9 @@
                     <a class="block py-1.5 text-xl font-light" href="/">Home</a>
                   </li>
                   <li class="border-b-2" style="border-color: transparent">
-                    <a class="block py-1.5 text-xl font-light" href="/moreinfo.html"
+                    <a
+                      class="block py-1.5 text-xl font-light"
+                      href="/moreinfo.html"
                       >Notes</a
                     >
                   </li>
@@ -1344,4 +1350,10 @@
       </div>
     </div>
   </body>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
 </html>
